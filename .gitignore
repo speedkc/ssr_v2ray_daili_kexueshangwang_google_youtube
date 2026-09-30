@@ -1,0 +1,6 @@
+# 时间戳测速明细不入库（只保留 current）
+data/benchmark_results_[0-9]*.csv
+
+# Python
+__pycache__/
+*.pyc
