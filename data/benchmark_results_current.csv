@@ -1,6 +1,6 @@
 node_name,protocol,latency,download,upload,packet_loss
-KC-US-1,Hysteria 2,45,81.04,42.19,0.02
-KC-SG-1,VLESS Reality,52,126.25,59.13,0.02
-KC-HK-3,VLESS Reality,55,148.72,39.76,0.67
-KC-TW-1,VLESS Reality,70,49.39,40.3,0.55
-KC-HK-2,VLESS Reality,109,154.17,20.88,0.81
+KC-HK-1,Hysteria 2,62,88.52,18.57,0.39
+KC-SG-1,Hysteria 2,83,100.44,19.01,0.18
+KC-SG-2,VLESS Reality,86,80.5,60.02,0.91
+KC-TW-1,Hysteria 2,100,70.48,33.54,1.0
+KC-SG-5,TUIC v5,154,56.46,44.91,0.61
