@@ -1,6 +1,6 @@
 node_name,protocol,latency,download,upload,packet_loss
-KC-SG-2,Hysteria 2,54,116.9,15.45,1.03
-KC-HK-1,TUIC v5,116,45.32,55.67,0.21
-KC-SG-5,SS-2022,135,117.24,21.65,0.97
-KC-SG-1,SS-2022,147,117.84,13.05,0.87
-KC-JP-1,Hysteria 2,162,113.85,57.87,0.29
+KC-JP-2,TUIC v5,49,114.79,60.64,0.44
+KC-SG-2,Hysteria 2,64,127.42,49.59,0.03
+KC-SG-5,Hysteria 2,75,149.41,33.95,0.71
+KC-HK-2,Hysteria 2,87,150.03,31.91,0.79
+KC-HK-1,TUIC v5,129,134.93,48.15,1.07
