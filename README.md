@@ -133,13 +133,6 @@ docker run -d --name subconverter -p 25500:25500 tindy2013/subconverter:latest
 # 转换：/sub?target=clash&url=<你的订阅>
 ```
 
-### 📌 2026-10-26 今日更新
-
-- **测速快报**：5 个节点实测完成，最佳节点 **KC-HK-1**（协议 SS-2022），延迟 **52ms**，下载 **58.86 Mbps**。
-- 🔧 **协议选型**：追求抗探测选 VLESS Reality（免证书依赖、握手可伪装）；高丢包线路优先 Hysteria 2 / TUIC，基于 QUIC 对弱网更友好。
-- 🔧 **Docker 代理**：给 dockerd 配代理要写 systemd drop-in（`docker.service.d/proxy.conf`），只在 shell 里 export 对守护进程无效。
-- 🎁 **新人试用**：通过专属通道注册即可领取试用额度，加入技术交流群另有额外优惠。
-
 ### 📌 2026-10-27 今日更新
 
 - **测速快报**：5 个节点实测完成，最佳节点 **KC-HK-1**（协议 SS-2022），延迟 **58ms**，下载 **146.02 Mbps**。
@@ -182,7 +175,15 @@ docker run -d --name subconverter -p 25500:25500 tindy2013/subconverter:latest
 - 🔧 **Docker 代理**：给 dockerd 配代理要写 systemd drop-in（`docker.service.d/proxy.conf`），只在 shell 里 export 对守护进程无效。
 - 🎁 **新人试用**：通过专属通道注册即可领取试用额度，加入技术交流群另有额外优惠。
 
+### 📌 2026-11-02 今日更新
+
+- **测速快报**：5 个节点实测完成，最佳节点 **KC-SG-2**（协议 Hysteria 2），延迟 **78ms**，下载 **66.94 Mbps**。
+- 🔧 **Tun 模式**：只在浏览器里生效说明没接管系统流量，开启 Tun 后 IDE、终端、Docker 才会走代理，注意需要管理员权限装虚拟网卡。
+- 🔧 **代理自检**：`curl -x http://127.0.0.1:7890 -sS -o /dev/null -w '%{http_code}' https://www.gstatic.com/generate_204`，返回 204 才算真的通了。
+- 🎁 **成本对照**：月付 ¥18 起、年付折算每月更低，适合先做链路测试再决定是否长期使用。
+
 ## 📅 第五部分：维护日志与版本迭代记录
+2026-11-02：例行节点与协议巡检完成，更新当日测速数据（最佳 KC-SG-2 / Hysteria 2 / 78ms）；同步校对客户端配置与分流规则要点。
 2026-11-01：例行节点与协议巡检完成，更新当日测速数据（最佳 KC-SG-1 / TUIC v5 / 58ms）；同步校对客户端配置与分流规则要点。
 2026-10-31：例行节点与协议巡检完成，更新当日测速数据（最佳 KC-SG-1 / VLESS Reality / 53ms）；同步校对客户端配置与分流规则要点。
 2026-10-30：例行节点与协议巡检完成，更新当日测速数据（最佳 KC-JP-2 / TUIC v5 / 49ms）；同步校对客户端配置与分流规则要点。
